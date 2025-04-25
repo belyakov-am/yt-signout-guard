@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Signout Guard",
+  "version": "1.0.0",
+  "description": "Prevents you from accidentally signing out of YouTube account(s) while switching between them",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
